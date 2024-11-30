@@ -22,3 +22,9 @@ add_executable(excemption_tests tests/excemption_tests.cpp)
 
 # Link the test executable with Google Test and the main library
 target_link_libraries(excemption_tests ${GTEST_LIBRARIES} pthread hra_tax_exemption)
+
+# Enable testing
+enable_testing()
+
+# Add the test
+add_test(NAME excemption_tests COMMAND excemption_tests)
