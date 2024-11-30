@@ -1,9 +1,9 @@
-#ifndef MY_LIBRARY_H
-#define MY_LIBRARY_H
+#ifndef EXEMPTION_CALCULATOR_H
+#define EXEMPTION_CALCULATOR_H
 
 class ExemptionCalculator {
 public:
     double calculateActualRentMinusTenPercentageBasicSalary();
 };
 
-#endif // MY_LIBRARY_H
+#endif // EXEMPTION_CALCULATOR_H
