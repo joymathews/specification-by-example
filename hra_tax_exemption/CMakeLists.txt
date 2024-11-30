@@ -11,8 +11,6 @@ add_library(hra_tax_exemption SHARED src/exemption_calculator.cpp)
 # Specify include directories
 target_include_directories(hra_tax_exemption PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-include(/usr/local/vcpkg/scripts/buildsystems/vcpkg.cmake)
-
 # Add Google Test
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
