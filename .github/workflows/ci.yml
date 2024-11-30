@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up CMake
+      uses: lukka/get-cmake@v3.26.0
+
+    - name: Install vcpkg
+      run: |
+        git clone https://github.com/microsoft/vcpkg.git
+        ./vcpkg/bootstrap-vcpkg.sh
+
+    - name: Install dependencies
+      run: |
+        ./vcpkg/vcpkg install gtest
+
+    - name: Create build directory
+      run: mkdir -p hra_tax_exemption/build
+
+    - name: Configure CMake
+      run: cmake -DCMAKE_TOOLCHAIN_FILE=$GITHUB_WORKSPACE/vcpkg/scripts/buildsystems/vcpkg.cmake -S hra_tax_exemption -B hra_tax_exemption/build
+
+    - name: Build
+      run: cmake --build hra_tax_exemption/build
+
+    - name: Run tests
+      run: ctest --test-dir hra_tax_exemption/build
