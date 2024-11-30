@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -26,6 +26,9 @@ jobs:
     - name: Install dependencies
       run: |
         ./vcpkg/vcpkg install gtest
+
+    - name: debug
+      run: pwd
 
     - name: Build
       run: cd hra_tax_exemption && mkdir build && cd build && cmake .. && make
