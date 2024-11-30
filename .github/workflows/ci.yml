@@ -31,7 +31,7 @@ jobs:
       run: mkdir -p hra_tax_exemption/build
 
     - name: Configure CMake
-      run: cmake -S hra_tax_exemption -B hra_tax_exemption/build
+      run: cmake -DCMAKE_TOOLCHAIN_FILE=$GITHUB_WORKSPACE/vcpkg/scripts/buildsystems/vcpkg.cmake -S hra_tax_exemption -B hra_tax_exemption/build
 
     - name: Build
       run: cmake --build hra_tax_exemption/build
