@@ -30,9 +30,6 @@ jobs:
     - name: Create build directory
       run: mkdir -p hra_tax_exemption/build
 
-    - name: debug
-      run: printenv
-
     - name: Configure CMake
       run: cmake -DCMAKE_TOOLCHAIN_FILE=$GITHUB_WORKSPACE/vcpkg/scripts/buildsystems/vcpkg.cmake -S hra_tax_exemption -B hra_tax_exemption/build
 
