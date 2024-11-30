@@ -34,10 +34,10 @@ jobs:
       run: cd hra_tax_exemption && ls -la
 
     - name: Create build directory
-      run: mkdir build
+      run: mkdir build && ls -la
     
     - name: change directory
-      run: cd build
+      run: cd build && pwd && ls -la
     
     - name: call cmake
       run: cmake ..
