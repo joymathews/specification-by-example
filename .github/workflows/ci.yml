@@ -34,7 +34,7 @@ jobs:
       run: cd hra_tax_exemption && ls -la
 
     - name: call cmake
-      run: cmake 
+      run: cmake .
     
     - name: call make
       run: make
