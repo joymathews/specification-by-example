@@ -30,14 +30,8 @@ jobs:
     - name: debug
       run: pwd && ls -la
 
-    - name: change directory
-      run: cd hra_tax_exemption && ls -la
-
-    - name: call cmake
-      run: cmake -S ./ -B build 
-    
     - name: call make
-      run: cd build && make
+      run: cd hra_tax_exemption && mkdir build && cd build && cmake -S .. && make
 
     - name: Run tests
       run: ctest --test-dir build
