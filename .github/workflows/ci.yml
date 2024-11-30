@@ -28,7 +28,7 @@ jobs:
         ./vcpkg/vcpkg install gtest
 
     - name: debug
-      run: pwd
+      run: pwd && ls -la
 
     - name: Build
       run: cd hra_tax_exemption && mkdir build && cd build && cmake .. && make
