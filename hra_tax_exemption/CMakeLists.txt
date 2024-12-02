@@ -21,12 +21,12 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
 # Add the test executable
-add_executable(excemption_tests tests/excemption_tests.cpp)
+add_executable(exemption_tests tests/exemption_tests.cpp)
 add_executable(salary_tests tests/salary_tests.cpp)
 add_executable(rent_tests tests/rent_tests.cpp)
 
 # Link the test executable with Google Test and the main library
-target_link_libraries(excemption_tests ${GTEST_LIBRARIES} pthread hra_tax_exemption)
+target_link_libraries(exemption_tests ${GTEST_LIBRARIES} pthread hra_tax_exemption)
 target_link_libraries(salary_tests ${GTEST_LIBRARIES} pthread hra_tax_exemption)
 target_link_libraries(rent_tests ${GTEST_LIBRARIES} pthread hra_tax_exemption)
 
@@ -34,6 +34,6 @@ target_link_libraries(rent_tests ${GTEST_LIBRARIES} pthread hra_tax_exemption)
 enable_testing()
 
 # Add the test
-add_test(NAME excemption_tests COMMAND excemption_tests)
+add_test(NAME exemption_tests COMMAND exemption_tests)
 add_test(NAME salary_tests COMMAND salary_tests)
 add_test(NAME rent_tests COMMAND rent_tests)
