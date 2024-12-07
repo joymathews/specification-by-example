@@ -16,7 +16,7 @@ namespace HRAExemption
 		double getFortyPercentOfBasicSalary() const;
 		double getFiftyPercentOfBasicSalary() const;
 		double getTenPercentOfBasicSalary() const;
-		double getHRA();
+		double getHRA() const;
 	};
 }
 #endif // SALARY_H
