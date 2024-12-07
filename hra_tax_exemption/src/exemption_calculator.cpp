@@ -19,7 +19,7 @@ ExemptionCalculator::ExemptionCalculator(const Salary&  salary , Rent rent, bool
 {
 }
 
-double ExemptionCalculator::calculateExemption()
+double ExemptionCalculator::calculateExemption() const
 {
 	return std::min(
 		{
