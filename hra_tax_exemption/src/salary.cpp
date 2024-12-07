@@ -21,7 +21,7 @@ double Salary::getTenPercentOfBasicSalary() const
 	return yearlyBasicSalary * factorForTenPercentage;
 }
 
-double Salary::getHRA()
+double Salary::getHRA() const
 {
 	return yearlyHra;
 }
