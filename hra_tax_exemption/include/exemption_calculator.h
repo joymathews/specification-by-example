@@ -16,7 +16,7 @@ namespace HRAExemption
 		double calculateBasicSalaryExemption() const;
 	public:
 		ExemptionCalculator(const Salary&  salary, Rent rent, bool livingInMetroCity);
-		double calculateExemption();
+		double calculateExemption() const;
 	};
 }
 
