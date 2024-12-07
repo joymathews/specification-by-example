@@ -1,7 +1,7 @@
 #include "rent.h"
 using namespace HRAExemption;
 
-Rent::Rent(double monthlyRent) : rent(rent)
+Rent::Rent(double monthlyRent) : rent(monthlyRent)
 {
 	rent = monthlyRent * monthsInYear;
 }
