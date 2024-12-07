@@ -4,7 +4,7 @@ using namespace HRAExemption;
 namespace HRAExemptionTests {
 
 
-	//Feature: Salary
+	//Feature: The system should store monthly basic salary and HRA and return the yearly basic salary, yearly HRA, 40% of basic salary, 50% of basic salary, 10% of basic salary.
 
 	// Scenario: Salary percentage Forty Percentage
 	//
