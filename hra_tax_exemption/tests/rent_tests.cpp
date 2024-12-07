@@ -3,7 +3,7 @@
 using namespace HRAExemption;
 
 namespace HRAExemptionTests {
-	// Feature: Rent
+	// Feature: The System should store the rent paid monthly and return the rent paid yearly
 
 	// Scenario: Retrieve Rent
 	//

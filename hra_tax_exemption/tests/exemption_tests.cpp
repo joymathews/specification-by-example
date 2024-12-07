@@ -3,7 +3,7 @@
 using namespace HRAExemption;
 
 namespace HRAExemptionTests {
-	//Feature: Exemption Calculation
+	//Feature: The system should calculate the income tax exemption that can be claimed on HRA
 
 	// Scenario: Actual HRA received per year is the least amount
 	//
