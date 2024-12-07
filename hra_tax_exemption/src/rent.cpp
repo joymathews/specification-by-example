@@ -1,12 +1,11 @@
 #include "rent.h"
 using namespace HRAExemption;
 
-Rent::Rent(double monthlyRent) : rent(monthlyRent)
+Rent::Rent(double monthlyRent) : rent(monthlyRent * monthsInYear)
 {
-	rent = monthlyRent * monthsInYear;
 }
 
-double Rent::getRent()
+double Rent::getRent() const
 {
     return this->rent;
 }
