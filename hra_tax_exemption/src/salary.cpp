@@ -6,17 +6,17 @@ Salary::Salary(double monthlyBasicSalary, double monthlyHra) : yearlyBasicSalary
 	yearlyBasicSalary = yearlyBasicSalary * monthsInYear;
 	yearlyHra = yearlyHra * monthsInYear;
 }
-double Salary::getFortyPercentOfBasicSalary()
+double Salary::getFortyPercentOfBasicSalary() const
 {
 	return yearlyBasicSalary * factorForPercentage;
 }
 
-double Salary::getFiftyPercentOfBasicSalary()
+double Salary::getFiftyPercentOfBasicSalary() const
 {
 	return yearlyBasicSalary * factorForFiftyPercentage;
 }
 
-double Salary::getTenPercentOfBasicSalary()
+double Salary::getTenPercentOfBasicSalary() const
 {
 	return yearlyBasicSalary * factorForTenPercentage;
 }

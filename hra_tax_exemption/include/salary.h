@@ -13,9 +13,9 @@ namespace HRAExemption
 		const double factorForTenPercentage = 0.1;
 	public:
 		Salary(double monthlyBasicSalary, double monthlyHra);
-		double getFortyPercentOfBasicSalary();
-		double getFiftyPercentOfBasicSalary();
-		double getTenPercentOfBasicSalary();
+		double getFortyPercentOfBasicSalary() const;
+		double getFiftyPercentOfBasicSalary() const;
+		double getTenPercentOfBasicSalary() const;
 		double getHRA();
 	};
 }

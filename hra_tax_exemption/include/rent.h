@@ -8,8 +8,8 @@ namespace HRAExemption
 		double rent;
 		const int monthsInYear = 12;
 	public:
-		Rent(double monthlyRent);
-		double getRent();
+		explicit Rent(double monthlyRent);
+		double getRent() const;
 	};
 }
 #endif // RENT_H

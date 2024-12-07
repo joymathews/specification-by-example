@@ -3,10 +3,10 @@ using namespace HRAExemption;
 
 Rent::Rent(double monthlyRent) : rent(monthlyRent)
 {
-	rent = monthlyRent * monthsInYear;
+    rent *= monthsInYear;
 }
 
-double Rent::getRent()
+double Rent::getRent() const
 {
     return this->rent;
 }
