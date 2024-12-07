@@ -14,7 +14,7 @@ double ExemptionCalculator::calculateBasicSalaryExemption()
 	return metroCity ? salaryDetails.getFiftyPercentOfBasicSalary() : salaryDetails.getFortyPercentOfBasicSalary();
 }
 
-ExemptionCalculator::ExemptionCalculator(Salary const salary , Rent rent, bool livingInMetroCity) 
+ExemptionCalculator::ExemptionCalculator(const Salary&  salary , Rent rent, bool livingInMetroCity) 
 	:salaryDetails(salary), rentDetails(rent), metroCity(livingInMetroCity)
 {
 }
